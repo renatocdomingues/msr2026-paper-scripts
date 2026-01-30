@@ -9,23 +9,28 @@ This repository contains the scripts used in the study:
 
 ## 📁 Repository Structure
 
-- `step1-fix.ipynb`  
-  Identification and filtering of bug-fixing pull requests.
+This repository contains the notebooks used in the data collection and analysis pipeline of the project.
 
-- `step2-modified files.ipynb`  
-  Extraction and analysis of modified files in PRs.
+🔹 Data Collection & Processing Notebooks
 
-- `step3-test_cases.ipynb`  
-  Identification of test-related changes.
+Step 1 - Get dataset.ipynb
+Collects and prepares the initial dataset used in the study.
 
-- `step4-reviewers.ipynb`  
-  Extraction of reviewers and review activity.
+Step 2 - Get reviewers.ipynb
+Extracts and processes reviewer information associated with the PRs.
 
-- `step5-closes_prs.ipynb`  
-  Identification of who closes the PRs.
+Step 3 - Get Closure.ipynb
+Gathers closure-related information.
 
-- `step6-comments.ipynb`  
-  Extraction of comments in PRs.
+Step 4 - Get comments.ipynb
+Retrieves and processes comments associated with the PRs.
 
-- `step7-manual_analysis.ipynb`  
-  Extraction for manual classification and qualitative analysis.
+🔹 Research Question Notebooks
+
+RQ1 - Statistics.ipynb
+Performs statistical analysis related to Research Question 1.
+
+RQ2 - Analysis PRs.ipynb
+Get pull requests that were selected for manual analysis in Research Question 2. 
+
+Each notebook is designed to be executed sequentially where applicable. Intermediate and final outputs are stored in the corresponding output directories.

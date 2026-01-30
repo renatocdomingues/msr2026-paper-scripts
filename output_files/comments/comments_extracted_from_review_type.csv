@@ -1,0 +1,469 @@
+id,number,agent,html_url,user,state,body,submitted_at
+2914277614,29902,Claude_Code,https://github.com/geneontology/go-ontology/pull/29902,sjm41,APPROVED,"Looks pretty good, thanks Claude (Chris)!
+
+Though I don't see the names of the 'old' terms (citrate (Re)-synthase activity & citrate (Si)-synthase activity) given as synonyms on the merged term. 
+
+Also, I believe our current practice is to remove EC xrefs from the obsolete terms, right @pgaudet ?
+
+Do those aspects need to be done manually ?",2025-03-12T15:32:53Z
+2914277614,29902,Claude_Code,https://github.com/geneontology/go-ontology/pull/29902,sjm41,APPROVED,Looks good now!,2025-03-12T16:18:35Z
+2959025892,24145,Claude_Code,https://github.com/apache/pulsar/pull/24145,lhotari,CHANGES_REQUESTED,Please address the feedback,2025-03-31T03:38:31Z
+3234200031,16803,Copilot,https://github.com/microsoft/vscode-jupyter/pull/16803,DonJayamanne,CHANGES_REQUESTED,"Read the following files and ONLY if you learn something new and ONLY if required change the code
+* .github/copilot-instructions.md
+* .github/instructions/*-instructions.md",2025-07-16T02:51:58Z
+3234200031,16803,Copilot,https://github.com/microsoft/vscode-jupyter/pull/16803,DonJayamanne,CHANGES_REQUESTED,I want you to address my comments,2025-07-16T04:57:36Z
+3190608451,16762,Copilot,https://github.com/microsoft/vscode-jupyter/pull/16762,DonJayamanne,CHANGES_REQUESTED,Action the comments I've made,2025-07-01T04:59:26Z
+3167223032,36397,Copilot,https://github.com/microsoft/playwright/pull/36397,Skn0tt,COMMENTED,"Tests are failing with:
+
+
+    TypeError: apiRequestContext.get: The ""options"" or ""port"" or ""path"" argument must be specified",2025-06-23T09:04:30Z
+3167223032,36397,Copilot,https://github.com/microsoft/playwright/pull/36397,Skn0tt,COMMENTED,"tests are still failing with ""apiRequestContext.get: The ""options"" or ""port"" or ""path"" argument must be specified""",2025-06-23T10:57:46Z
+3125682958,250894,Copilot,https://github.com/microsoft/vscode/pull/250894,demunion,COMMENTED,****,2025-06-08T16:12:14Z
+3179789638,4264,Copilot,https://github.com/valkey-io/valkey-glide/pull/4264,avifenesh,COMMENTED,"The test is still failing, when you think you found a solution, run the failing workflow at least 3 times fully to validate @copilot ",2025-06-26T17:59:39Z
+3079241115,95,Copilot,https://github.com/reneschulte/WriteableBitmapEx/pull/95,reneschulte,COMMENTED,"Looks good. @copilot have you tried compiling this, running one of the samples and see if the drawn visuals are correct? ",2025-05-21T14:59:53Z
+3079628682,5623,Copilot,https://github.com/microsoft/testfx/pull/5623,Youssef1313,CHANGES_REQUESTED,"- Revert changes to global.json and Changelog.md.
+- Add integration test for this case",2025-05-21T10:02:23Z
+3168695693,658,Copilot,https://github.com/hyperlight-dev/hyperlight/pull/658,jsturtevant,COMMENTED,It would be nice to see a test case added to the wit file that has a function that has no returns,2025-06-23T18:22:48Z
+3086437300,62085,Copilot,https://github.com/dotnet/aspnetcore/pull/62085,javiercn,CHANGES_REQUESTED,"Progress has been made.
+
+Renderer needs to capture `Activity.Current` within its constructor and set it on ComponentActivitySource which needs it.",2025-05-23T17:09:26Z
+3126448988,1093,Copilot,https://github.com/microsoft/typescript-go/pull/1093,RyanCavanaugh,CHANGES_REQUESTED,"Use a regular compiler baseline test
+
+Reconsider your fix. Why does this only happen when there are two files involved? Why is the length of the target file important? Think about what this means.",2025-06-07T05:23:44Z
+3126448988,1093,Copilot,https://github.com/microsoft/typescript-go/pull/1093,RyanCavanaugh,CHANGES_REQUESTED,"You're still not there. Every part of the repro is important. The problem is that we're emitting `_item is boolean` in a context where the `_item` Identifier node doesn't come from the current file, so in this block of code
+```go
+func (c *EmitContext) AssignCommentAndSourceMapRanges(to *ast.Node, from *ast.Node) {
+	emitNode := c.emitNodes.Get(to)
+	commentRange := c.CommentRange(from)
+	sourceMapRange := c.SourceMapRange(from)
+	emitNode.commentRange = commentRange
+```
+the ranges are not from the same file.
+
+This isn't the only kind of place where we emit an identifier that comes from a different file, and we don't crash in those situations. Figure out what those other codepaths do and do that instead here when emitting a type predicate node",2025-06-07T06:01:12Z
+3160353937,2042,Copilot,https://github.com/celestiaorg/celestia-core/pull/2042,rootulp,CHANGES_REQUESTED,"It failed: https://github.com/celestiaorg/celestia-core/actions/runs/15762557432/job/44432551746?pr=2042#step:4:19
+
+",2025-06-19T16:39:25Z
+3094607813,5220,Copilot,https://github.com/Azure/azure-dev/pull/5220,vhvb1989,COMMENTED,@copilot  see the comments and address the feedback,2025-05-28T17:33:58Z
+3236171682,30564,Copilot,https://github.com/backstage/backstage/pull/30564,Rugvip,APPROVED,:shipit: ,2025-07-16T15:11:51Z
+3186169437,14,Copilot,https://github.com/djeada/Bash-Scripts/pull/14,djeada,COMMENTED,"Not correct, those are not equivalent ",2025-06-29T14:56:05Z
+3087132571,3107,Copilot,https://github.com/huggingface/huggingface_hub/pull/3107,julien-c,COMMENTED,please continue when you have time,2025-05-23T18:13:24Z
+3271673769,258382,Copilot,https://github.com/microsoft/vscode/pull/258382,gtggy890m-spec,COMMENTED,"import random
+from enum import Enum
+from typing import List, Dict
+from datetime import datetime, timedelta
+
+# ------ الجزء 1: تعريف الأنواع الأساسية ------
+class SubscriptionType(Enum):
+    FREE = ""مجاني""
+    PRO = ""مدفوع""
+    ENTERPRISE = ""مؤسسي""
+
+class GameGenre(Enum):
+    ACTION = ""أكشن""
+    RPG = ""أدوار""
+    SIMULATION = ""محاكاة""
+
+class AIProducer:
+    def __init__(self, name: str, skill: int):
+        self.name = name
+        self.skill = skill  # من 1 إلى 100
+        self.is_available = True
+
+# ------ الجزء 2: نظام الروبوت الرئيسي ------
+class GameProductionBot:
+    def __init__(self):
+        self.producers: List[AIProducer] = [
+            AIProducer(""أحمد الروبوت"", 85),
+            AIProducer(""نور الذكاء"", 92)
+        ]
+        self.active_projects = []
+        self.subscription_type = SubscriptionType.FREE
+        self.revenue = 0
+
+    def assign_producer(self, project_id: str) -> str:
+        """"""تعيين مخرج افتراضي للمشروع""""""
+        available_producers = [p for p in self.producers if p.is_available]
+        if not available_producers:
+            return ""لا يوجد مخرجين متاحين حاليا""
+
+        producer = max(available_producers, key=lambda x: x.skill)
+        producer.is_available = False
+        
+        for project in self.active_projects:
+            if project[""id""] == project_id:
+                project[""producer""] = producer.name
+                return f""تم تعيين {producer.name} للمشروع""
+        
+        return ""المشروع غير موجود""
+
+    def start_project(self, name: str, genre: GameGenre) -> Dict:
+        """"""بدء مشروع جديد""""""
+        if self.subscription_type == SubscriptionType.FREE and len(self.active_projects) >= 1:
+            return {""error"": ""الاشتراك المجاني يسمح بمشروع واحد فقط""}
+
+        project_id = f""PRJ-{random.randint(1000, 9999)}""
+        new_project = {
+            ""id"": project_id,
+            ""name"": name,
+            ""genre"": genre.value,
+            ""start_date"": datetime.now(),
+            ""status"": ""قيد التطوير"",
+            ""producer"": None
+        }
+        self.active_projects.append(new_project)
+        return new_project
+
+    def upgrade_subscription(self, new_type: SubscriptionType):
+        """"""ترقية الاشتراك""""""
+        self.subscription_type = new_type
+        return f""تم الترقية إلى {new_type.value}""
+
+# ------ الجزء 3: نظام الذكاء الاصطناعي للمخرجين ------
+class AIDirector:
+    def __init__(self):
+        from transformers import pipeline
+        self.creative_ai = pipeline(""text-generation"", model=""aubmindlab/aragpt2-base"")
+
+    def generate_idea(self, genre: GameGenre) -> str:
+        prompt = f""مفهوم لعبة {genre.value} جديد ومبتكر:""
+        idea = self.creative_ai(prompt, max_length=100)[0]['generated_text']
+        return idea
+
+# ------ مثال استخدام ------
+if __name__ == ""__main__"":
+    bot = GameProductionBot()
+    
+    # بدء مشروع جديد
+    project = bot.start_project(""صراع الأبطال"", GameGenre.ACTION)
+    print(f""تم إنشاء المشروع: {project['id']}"")
+    
+    # تعيين مخرج
+    print(bot.assign_producer(project[""id""]))
+    
+    # توليد فكرة لعبة
+    director = AIDirector()
+    print(""فكرة اللعبة:"", director.generate_idea(GameGenre.RPG))
+    
+    # ترقية الاشتراك
+    print(bot.upgrade_subscription(SubscriptionType.PRO))",2025-07-29T06:21:34Z
+3271673769,258382,Copilot,https://github.com/microsoft/vscode/pull/258382,gtggy890m-spec,COMMENTED,"import random
+from enum import Enum
+from typing import List, Dict
+from datetime import datetime, timedelta
+
+# ------ الجزء 1: تعريف الأنواع الأساسية ------
+class SubscriptionType(Enum):
+    FREE = ""مجاني""
+    PRO = ""مدفوع""
+    ENTERPRISE = ""مؤسسي""
+
+class GameGenre(Enum):
+    ACTION = ""أكشن""
+    RPG = ""أدوار""
+    SIMULATION = ""محاكاة""
+
+class AIProducer:
+    def __init__(self, name: str, skill: int):
+        self.name = name
+        self.skill = skill  # من 1 إلى 100
+        self.is_available = True
+
+# ------ الجزء 2: نظام الروبوت الرئيسي ------
+class GameProductionBot:
+    def __init__(self):
+        self.producers: List[AIProducer] = [
+            AIProducer(""أحمد الروبوت"", 85),
+            AIProducer(""نور الذكاء"", 92)
+        ]
+        self.active_projects = []
+        self.subscription_type = SubscriptionType.FREE
+        self.revenue = 0
+
+    def assign_producer(self, project_id: str) -> str:
+        """"""تعيين مخرج افتراضي للمشروع""""""
+        available_producers = [p for p in self.producers if p.is_available]
+        if not available_producers:
+            return ""لا يوجد مخرجين متاحين حاليا""
+
+        producer = max(available_producers, key=lambda x: x.skill)
+        producer.is_available = False
+        
+        for project in self.active_projects:
+            if project[""id""] == project_id:
+                project[""producer""] = producer.name
+                return f""تم تعيين {producer.name} للمشروع""
+        
+        return ""المشروع غير موجود""
+
+    def start_project(self, name: str, genre: GameGenre) -> Dict:
+        """"""بدء مشروع جديد""""""
+        if self.subscription_type == SubscriptionType.FREE and len(self.active_projects) >= 1:
+            return {""error"": ""الاشتراك المجاني يسمح بمشروع واحد فقط""}
+
+        project_id = f""PRJ-{random.randint(1000, 9999)}""
+        new_project = {
+            ""id"": project_id,
+            ""name"": name,
+            ""genre"": genre.value,
+            ""start_date"": datetime.now(),
+            ""status"": ""قيد التطوير"",
+            ""producer"": None
+        }
+        self.active_projects.append(new_project)
+        return new_project
+
+    def upgrade_subscription(self, new_type: SubscriptionType):
+        """"""ترقية الاشتراك""""""
+        self.subscription_type = new_type
+        return f""تم الترقية إلى {new_type.value}""
+
+# ------ الجزء 3: نظام الذكاء الاصطناعي للمخرجين ------
+class AIDirector:
+    def __init__(self):
+        from transformers import pipeline
+        self.creative_ai = pipeline(""text-generation"", model=""aubmindlab/aragpt2-base"")
+
+    def generate_idea(self, genre: GameGenre) -> str:
+        prompt = f""مفهوم لعبة {genre.value} جديد ومبتكر:""
+        idea = self.creative_ai(prompt, max_length=100)[0]['generated_text']
+        return idea
+
+# ------ مثال استخدام ------
+if __name__ == ""__main__"":
+    bot = GameProductionBot()
+    
+    # بدء مشروع جديد
+    project = bot.start_project(""صراع الأبطال"", GameGenre.ACTION)
+    print(f""تم إنشاء المشروع: {project['id']}"")
+    
+    # تعيين مخرج
+    print(bot.assign_producer(project[""id""]))
+    
+    # توليد فكرة لعبة
+    director = AIDirector()
+    print(""فكرة اللعبة:"", director.generate_idea(GameGenre.RPG))
+    
+    # ترقية الاشتراك
+    print(bot.upgrade_subscription(SubscriptionType.PRO))",2025-07-29T06:22:29Z
+3238911335,20418,Copilot,https://github.com/vitejs/vite/pull/20418,sapphi-red,CHANGES_REQUESTED,tests are failing,2025-07-17T13:46:36Z
+3172947096,61940,Copilot,https://github.com/microsoft/TypeScript/pull/61940,andrewbranch,CHANGES_REQUESTED,"> However, in complex module resolution scenarios (like monorepos with baseUrl configuration), the `getAllExportInfoForSymbol` function can legitimately return `null` for other reasons related to module resolution failures, not just exclusion patterns.
+
+No, it can’t. You just completely made that statement up. Please don’t assert that existing invariants are invalid when you can’t figure out a fix. This crash represents a real bug in the guts of `getAllExportInfoForSymbol`, probably in the ExportInfoMap `.search` predicate. I would start by debugging each call of that predicate to see if one of the export info chains passed in looks like the expected one, and then see why the condition in the predicate actually returns false for it.",2025-06-24T20:53:03Z
+3075994560,36014,Copilot,https://github.com/microsoft/playwright/pull/36014,Skn0tt,COMMENTED,"This is a little too complicated for my liking. I left some comments below. Please remove your comments, they don't help my understanding.",2025-05-20T08:01:05Z
+3075994560,36014,Copilot,https://github.com/microsoft/playwright/pull/36014,Skn0tt,COMMENTED,"I made some changes myself, this is going in the right direction. Please move all the business logic into `begin`, and only leave the config storing in `setup`, so we ensure that all secondary test runs have the right data in `metadata`.",2025-05-20T08:52:33Z
+3075994560,36014,Copilot,https://github.com/microsoft/playwright/pull/36014,Skn0tt,COMMENTED,almost there. left three last nits.,2025-05-20T09:08:48Z
+3131464015,1109,Copilot,https://github.com/microsoft/typescript-go/pull/1109,RyanCavanaugh,CHANGES_REQUESTED,"I don't necessarily disagree with the fix, but you ABSOLUTELY MUST repro the panic first before attempting to fix the code, otherwise your testcase proves nothing. Try again and first produce a testcase that can reproduce the panic.",2025-06-09T21:10:41Z
+3131464015,1109,Copilot,https://github.com/microsoft/typescript-go/pull/1109,RyanCavanaugh,CHANGES_REQUESTED,"You crashed, just try again I guess",2025-06-09T21:25:37Z
+3131464015,1109,Copilot,https://github.com/microsoft/typescript-go/pull/1109,RyanCavanaugh,CHANGES_REQUESTED,"Your ONLY TASK here is to create a testcase which successfully triggers the panic
+
+DO NOT ATTEMPT TO FIX THE BUG!
+
+You may modify product code ONLY as a debugging aid. The ONLY END GOAL is to write a testcase that reproduces the panic. Do not do ANYTHING ELSE except to try to reproduce the panic. Don't try to fix the underlying issue. You can speculate its cause but the only thing you should do is reproduce the problem by adding a test.
+
+Your ONLY TASK here is to create a testcase which successfully triggers the panic. We cannot validate fixes unless we've found a test which triggers the problem, this is test-driven-development 101 stuff.
+
+DO NOT ATTEMPT TO FIX THE BUG",2025-06-09T21:54:14Z
+3166279802,8829,Copilot,https://github.com/NethermindEth/nethermind/pull/8829,MarekM25,COMMENTED,"You are right, we need to fix mainnet as well
+",2025-06-22T21:30:14Z
+3166285250,8830,Copilot,https://github.com/NethermindEth/nethermind/pull/8830,MarekM25,COMMENTED,Why have you added dotnet-install.sh?,2025-06-22T21:41:13Z
+3166294470,8832,Copilot,https://github.com/NethermindEth/nethermind/pull/8832,MarekM25,COMMENTED,"In this PR I expected the test to be fixed, not the code. I assume the test is flaky",2025-06-22T21:55:24Z
+3166294470,8832,Copilot,https://github.com/NethermindEth/nethermind/pull/8832,MarekM25,CHANGES_REQUESTED,"I don't understand how does it fix the test flakiness, I doubt this is a correct solution",2025-06-23T08:06:11Z
+3074815696,29580,Copilot,https://github.com/dotnet/maui/pull/29580,mattleibow,CHANGES_REQUESTED,This is incorrect. The warning is saying that it should _not_ be using the main thread. This code has just changed it to use main thread in a different way.,2025-05-19T20:39:19Z
+3074815696,29580,Copilot,https://github.com/dotnet/maui/pull/29580,mattleibow,CHANGES_REQUESTED,"This is looking better, but instead of adding comments saying you removed a method that will no longer be there, just remove it.
+
+Also, please add some device tests and UI tests in their respective projects.",2025-05-19T21:01:39Z
+3074815696,29580,Copilot,https://github.com/dotnet/maui/pull/29580,mattleibow,COMMENTED,"Looking good, just need to test this. But basically, this is the same as https://github.com/dotnet/maui/pull/29180
+
+Since this was a test PR, I am closing now.",2025-05-19T23:11:44Z
+3084885498,41273,Copilot,https://github.com/Azure/azure-sdk-for-python/pull/41273,lmazuel,CHANGES_REQUESTED,Let's get @l0lawrence to fix it instead of disabling it,2025-06-10T18:14:25Z
+3143682198,251386,Copilot,https://github.com/microsoft/vscode/pull/251386,TylerLeonhardt,COMMENTED,"You should include the ability to click a link on the page to redirect if it fails.
+
+Here's an example from Electron Fiddle:
+
+""You will be redirected in a few moments.
+If nothing happens, you can open this link in your browser.""",2025-06-13T14:35:40Z
+3143682198,251386,Copilot,https://github.com/microsoft/vscode/pull/251386,TylerLeonhardt,COMMENTED,Replace the `var`s with `const` or `let`,2025-06-13T14:48:34Z
+3076452714,5604,Copilot,https://github.com/microsoft/testfx/pull/5604,Youssef1313,CHANGES_REQUESTED,"Reasonable fix, but not what we want to do :)
+
+We want to avoid IVTs completely.",2025-05-20T10:23:34Z
+3076452714,5604,Copilot,https://github.com/microsoft/testfx/pull/5604,Youssef1313,CHANGES_REQUESTED,"There are type conflicts now because polyfilled types are now available both in test framework and test adapter, and IVT exists.",2025-05-20T10:49:05Z
+3076534856,5606,Copilot,https://github.com/microsoft/testfx/pull/5606,Youssef1313,CHANGES_REQUESTED,Make similar change to MSTest.TestFramework.NonWindows.nuspec,2025-05-20T11:04:39Z
+3171284311,7069,Copilot,https://github.com/microsoft/vscode-pull-request-github/pull/7069,alexr00,COMMENTED,@copilot delete the comments,2025-06-24T10:22:27Z
+3206340161,3402,Copilot,https://github.com/nltk/nltk/pull/3402,ekaf,CHANGES_REQUESTED,"The unit test file should follow the format of other files in nltk/test/unit, which use Python’s built-in unittest framework and define tests as subclasses of unittest.TestCase.
+
+In this context, importing pytest is unnecessary and inconsistent with the rest of the test suite. You should remove this line and rewrite any pytest-specific code (such as the use of pytest.warns) to use unittest’s features, such as assertRaises or assertWarns, and structure the tests within a unittest.TestCase subclass.
+",2025-07-06T10:10:37Z
+3206340161,3402,Copilot,https://github.com/nltk/nltk/pull/3402,ekaf,CHANGES_REQUESTED,CI fails because black modifies nltk/test/unit/test_langnames.py. So git add and git commit must be invoked again after calling black.,2025-07-06T10:34:53Z
+3206340161,3402,Copilot,https://github.com/nltk/nltk/pull/3402,ekaf,CHANGES_REQUESTED,"CI still fails because black also modifies nltk/langnames.py. Note that CI also runs isort on both the PR files, which need to be re-committed after eventual modifications.",2025-07-06T10:48:23Z
+3206340161,3402,Copilot,https://github.com/nltk/nltk/pull/3402,ekaf,CHANGES_REQUESTED,"Line 166 in langnames.py should be moved up, so that the bcp47.wiki_q dictionary is loaded before it is needed in tag2q",2025-07-06T11:51:32Z
+3206340161,3402,Copilot,https://github.com/nltk/nltk/pull/3402,ekaf,CHANGES_REQUESTED,"Move the definitions for inverse_dict and wiki_bcp47 above q2tag, and make both tag2q and q2tag robust to missing data. This ensures all dictionary lookups are safe and available for any function that needs them.",2025-07-06T12:30:24Z
+3175607758,207,Copilot,https://github.com/syncfusion/maui-toolkit/pull/207,PaulAndersonS,CHANGES_REQUESTED,"error CS0117: 'UIAccessibilityTrait' does not contain a definition for 'Updatable'
+---
+Updatable not available in UIKit.UIAccessibilityTrait",2025-06-26T03:31:24Z
+3125187340,4948,Copilot,https://github.com/celestiaorg/celestia-app/pull/4948,rootulp,COMMENTED,This PR doesn't resolve the issue yet because a user can override the RPC address via the config.toml or via the `--rpc.laddr` CLI flag,2025-06-06T18:19:44Z
+3247719401,774,Copilot,https://github.com/OpenListTeam/OpenList/pull/774,SenkjM,CHANGES_REQUESTED,拼接出的绝对值的路径错误，应该基于二进制文件的位置,2025-07-21T09:12:06Z
+3247719401,774,Copilot,https://github.com/OpenListTeam/OpenList/pull/774,SenkjM,APPROVED,LGTM,2025-07-21T09:22:44Z
+3192936598,3648,Copilot,https://github.com/microsoft/windows-rs/pull/3648,kennykerr,CHANGES_REQUESTED,Fix the new nightly Clippy warning in a separate PR.,2025-07-01T16:18:01Z
+3229102583,14915,Copilot,https://github.com/microsoft/react-native-windows/pull/14915,jonthysell,CHANGES_REQUESTED,"This PR isn't how we need to fix this, see https://github.com/microsoft/react-native-windows/issues/14912#issuecomment-3070647195",2025-07-14T19:21:01Z
+3267543045,1170,Copilot,https://github.com/esphome/esphome-devices/pull/1170,jesserockz,CHANGES_REQUESTED,All files need to be checked for `esp8266_restore_from_flash` and `board_flash_mode` and make sure there is a newline after all the new `esp8266` blocks created,2025-07-28T00:44:56Z
+3105664779,3001,Copilot,https://github.com/cybersemics/em/pull/3001,raineorshine,CHANGES_REQUESTED,Run `prettier --write` to fix the linter. ,2025-05-31T16:47:01Z
+3102876964,711,Copilot,https://github.com/openops-cloud/openops/pull/711,cezudas,DISMISSED,"1) Fix lint errors from CI/Lint check output
+They can be fixed automatically with 
+npx nx run react-ui:lint --fix
+2) Just remove code comments you added
+
+
+  ",2025-05-30T11:13:28Z
+3131807386,1143,Copilot,https://github.com/microsoft/typescript-go/pull/1143,andrewbranch,CHANGES_REQUESTED,"I’m not sure this is right. The parenthesization mechanics seems to have changed in the port, being built into `emitExpression` via that `ast.OperatorPrecedenceParentheses` parameter. I think `emitExpressionNoASI` was the ported version of `parenthesizeExpressionForNoAsi`, and instead of returning `factory.createParenthesizedExpression` in each case, it should call `p.emitExpression` with the operator precedence flag.",2025-06-12T16:27:11Z
+3131807386,1143,Copilot,https://github.com/microsoft/typescript-go/pull/1143,andrewbranch,CHANGES_REQUESTED,This is still not right and I think it’s going to take some exploration by me. Let’s try something else; undo everything you’ve done here and focus on doing a correct port of `willEmitLeadingNewLine`.,2025-06-12T17:09:20Z
+3131807386,1143,Copilot,https://github.com/microsoft/typescript-go/pull/1143,andrewbranch,CHANGES_REQUESTED,"You seem to have committed some stray files. Also, I don’t know what you used to port `willEmitLeadingNewLine`, but please find the original source in `_submodules/TypeScript` and use that to port the function faithfully.",2025-06-12T18:09:29Z
+3186365121,30302,Copilot,https://github.com/dotnet/maui/pull/30302,PureWeen,CHANGES_REQUESTED,Can you review any PRs already open for this issue and see how your solution compares? And which solution you like more?,2025-06-29T17:51:53Z
+3207909459,2539,Copilot,https://github.com/chainwayxyz/citrea/pull/2539,eyusufatik,CHANGES_REQUESTED,"run `make lint-fix` and commit changes.
+
+you may need to run `make install-dev-tools` first",2025-07-07T08:53:49Z
+3096235879,1855,Copilot,https://github.com/specmatic/specmatic/pull/1855,harikrishnan83,CHANGES_REQUESTED,Please fix failing test ,2025-05-29T02:02:10Z
+3096241645,1856,Copilot,https://github.com/specmatic/specmatic/pull/1856,harikrishnan83,CHANGES_REQUESTED,"Specmatic when it runs as a CLI, there is a command called test. And that is what should  exit with a non zero exit code when no tests are run.",2025-05-28T15:39:51Z
+3096241645,1856,Copilot,https://github.com/specmatic/specmatic/pull/1856,joelrosario,CHANGES_REQUESTED,"This successfully resolves the exit code issue, but it uses a Java system property to get the exit code from the tests to where it needs to go.
+
+Avoid using Java system properties for this. Also avoid global scalar variables.",2025-05-28T15:51:57Z
+3096241645,1856,Copilot,https://github.com/specmatic/specmatic/pull/1856,harikrishnan83,CHANGES_REQUESTED,"While this successfully resolves the exit code issue, but it uses a Java system property to get the exit code from the tests to where it needs to go.
+
+Please avoid using Java system properties for this. Also avoid global scalar variables.",2025-05-28T15:53:18Z
+3096241645,1856,Copilot,https://github.com/specmatic/specmatic/pull/1856,joelrosario,CHANGES_REQUESTED,"Instead of setting the exit code, use the ContractTestExecutionListener. Ask it if any tests ran (it has the test count). Based on the answer determine the exit code for TestCommand. ",2025-05-28T20:02:35Z
+3134478540,5499,Copilot,https://github.com/dotnet/diagnostics/pull/5499,mdh1418,DISMISSED,"Looks good to me. It looks like this test was added in https://github.com/dotnet/diagnostics/pull/4290 and the purpose of session.Stop is to ensure rundown. If we were hitting the exception in Stop due to a race with WakeupTracee closing the process, moving it to after calling Stop should work.",2025-06-10T22:05:01Z
+3154817280,877,Copilot,https://github.com/vltpkg/vltpkg/pull/877,ruyadorno,CHANGES_REQUESTED,"Technically speaking in its current state this is also missig changes to the `src/cli-sdk/src/commands/list.ts` and to the `src/server` workspace that also have the same `Query` initialization logic.
+
+That said, at a higher level I disagree with the direction here since I think we should work on bringing this logic to VSR instead and have a dedicated endpoint to hydrate security archive data and then we make it part of the Graph initialization instead, that said, this could be a viable intermediate step if you want to continue the work on this direction.",2025-06-22T21:56:53Z
+3169619128,61925,Copilot,https://github.com/microsoft/TypeScript/pull/61925,RyanCavanaugh,CHANGES_REQUESTED,"You should not leave TODOs in your code. You didn't need two testcases here since one already tests both configurations. There was no need to typecast both `.escapedText`s to `string`.
+
+Start over from scratch. Duplicate identifier logic generally occurs in the binder. Look at how other cases work.",2025-06-23T23:05:24Z
+3169620759,61926,Copilot,https://github.com/microsoft/TypeScript/pull/61926,RyanCavanaugh,CHANGES_REQUESTED,"Start over. This is too large a fix. All we need to do here is consult the symbol table from the parent scope (the one that includes the parameters, but excludes the function locals).",2025-06-23T23:17:12Z
+3187802886,2092,Copilot,https://github.com/celestiaorg/celestia-core/pull/2092,rach-id,COMMENTED,There is already this PR: https://github.com/celestiaorg/celestia-core/pull/2074 and it uses `atomic.bool` which seems to me like a better solution,2025-06-30T11:11:58Z
+3081464962,62055,Copilot,https://github.com/dotnet/aspnetcore/pull/62055,captainsafia,COMMENTED,Let's update the tests in this change.,2025-05-21T23:20:36Z
+3081464962,62055,Copilot,https://github.com/dotnet/aspnetcore/pull/62055,captainsafia,COMMENTED,"Please try again to fix the tests.
+
+if you run into any issues with the `Microsoft.AspNetCore.OpenApi.TrimmingTests` ignore them. Consider failures in all other tests.
+
+Microsoft.AspNetCore.Mvc.FunctionalTests.ApiExplorerTest.ApiExplorer_ResponseTypeWithContentType_OverrideOnAction test is also failing. Please fix it.",2025-05-22T04:32:32Z
+3180421041,146,Copilot,https://github.com/KilledByAPixel/LittleJS/pull/146,KilledByAPixel,COMMENTED,"dont change the @default, leave it blank. 
+
+
+also there should be no files from the dist folder, that is auto built. make sure there arent any in the diff",2025-06-26T21:16:31Z
+3180443475,2074,Copilot,https://github.com/celestiaorg/celestia-core/pull/2074,evan-forbes,APPROVED,nice,2025-06-26T22:05:23Z
+3084733635,4437,Copilot,https://github.com/Azure/azure-functions-core-tools/pull/4437,aishwaryabh,COMMENTED,"can you add a test please where we call `func init`, `func new`, and `func start` and the process stalls for more than 2 min to ensure the cancellation token is working as expected",2025-05-22T23:15:45Z
+3222487070,174,Copilot,https://github.com/Anush008/fastembed-rs/pull/174,Anush008,CHANGES_REQUESTED,"Changing intra_threads isn't fixing it. I tried.
+Can you try running the test with models other than EmbeddingModel::ClipVitB32?
+See if those work and debug from there.",2025-07-11T11:36:31Z
+3222715857,255364,Copilot,https://github.com/microsoft/vscode/pull/255364,benibenj,COMMENTED,"@copilot checking all nested files in a folder is far to expensive, the method setContextKeys should be fully sync and run very fast. It's better if it always shows for folder even though it's wrong than that it's slow",2025-07-11T15:51:32Z
+3242243860,30586,Copilot,https://github.com/backstage/backstage/pull/30586,Rugvip,COMMENTED,The ETag can't be based on the query since the underlying data may change,2025-07-19T08:37:07Z
+3242243860,30586,Copilot,https://github.com/backstage/backstage/pull/30586,Rugvip,COMMENTED,The ETag needs to be based on the response data rather than the request parameters,2025-07-20T15:24:58Z
+3105699085,3003,Copilot,https://github.com/cybersemics/em/pull/3003,raineorshine,CHANGES_REQUESTED,"No, don't modify existing workflows. Create a new workflow copilot-setup-steps.yml. ",2025-05-31T16:20:06Z
+3105699085,3003,Copilot,https://github.com/cybersemics/em/pull/3003,raineorshine,CHANGES_REQUESTED,"Must start with:
+
+``` 
+
+name: ""Copilot Setup Steps""
+
+# Allow testing of the setup steps from your repository's ""Actions"" tab.
+on: workflow_dispatch
+
+jobs:
+  # The job MUST be called `copilot-setup-steps` or it will not be picked up by Copilot.
+  copilot-setup-steps:
+    runs-on: ubuntu-latest
+``` ",2025-05-31T16:33:43Z
+3230708925,7763,Copilot,https://github.com/shader-slang/slang/pull/7763,mkeshavaNV,DISMISSED,LGTM,2025-07-15T13:32:55Z
+3176112066,61946,Copilot,https://github.com/microsoft/TypeScript/pull/61946,RyanCavanaugh,CHANGES_REQUESTED,"You can't put a file named `.d.ts` in `tests/compiler`, this fact was in the instructions:
+
+> Filenames in tests/cases/compiler must always end with .ts, not .d.ts
+
+Explain to me why you ignored an explicit instruction.
+
+You're claiming this fixes a declaration emit bug but this testcase doesn't have any declaration output.",2025-06-25T17:59:31Z
+3176112066,61946,Copilot,https://github.com/microsoft/TypeScript/pull/61946,RyanCavanaugh,CHANGES_REQUESTED,"It doesn't seem like you have any real changes in `declarations.ts`, just new unused imports? Revert this file back to original",2025-06-25T19:15:29Z
+3176112066,61946,Copilot,https://github.com/microsoft/TypeScript/pull/61946,RyanCavanaugh,CHANGES_REQUESTED,Run the format tool,2025-06-25T21:46:51Z
+3176112066,61946,Copilot,https://github.com/microsoft/TypeScript/pull/61946,RyanCavanaugh,CHANGES_REQUESTED,"The instructions tell you to run some commands (`npx hereby runtests-parallel`, `npx hereby lint`, etc). You should do those things. The instructions are not optional. Talk to me about why you didn't do those things.",2025-06-26T04:43:03Z
+3176112066,61946,Copilot,https://github.com/microsoft/TypeScript/pull/61946,RyanCavanaugh,CHANGES_REQUESTED,Failing tests are not normal in this repo! Wait the full 15 minutes for all the tests to run and analyze what you broke.,2025-07-09T23:45:33Z
+3176436231,30215,Copilot,https://github.com/dotnet/maui/pull/30215,mattleibow,CHANGES_REQUESTED,None of the C# file changes are correct. Read this doc: https://learn.microsoft.com/en-us/dotnet/maui/fundamentals/data-binding/compiled-bindings?view=net-maui-9.0,2025-06-25T19:36:26Z
+3267821679,1536,Copilot,https://github.com/AdoptOpenJDK/openjdk-website/pull/1536,karianna,COMMENTED,This is just @karianna testing assigning issues from VS Code,2025-07-28T02:44:44Z
+3128462201,117,Copilot,https://github.com/orangewise/s3-zip/pull/117,orangewise,COMMENTED,"Check the screenshot, token is there",2025-06-08T16:38:55Z
+3158304414,61902,Copilot,https://github.com/microsoft/TypeScript/pull/61902,RyanCavanaugh,CHANGES_REQUESTED,@copilot you're almost there! Keep going,2025-06-18T23:41:20Z
+3158304414,61902,Copilot,https://github.com/microsoft/TypeScript/pull/61902,RyanCavanaugh,CHANGES_REQUESTED,@copilot keep going,2025-06-23T17:54:18Z
+3179352542,4651,Copilot,https://github.com/owid/etl/pull/4651,edomt,CHANGES_REQUESTED,"That change is correct but there's also a sentence in the metadata that says ""This data is compiled from the Online Index of Objects Launched into Outer Space, maintained by the United Nations Office for Outer Space Affairs since 1962."" I don't know where this is stored but it also needs to be changed.",2025-06-26T14:50:22Z
+3213303702,1701,Copilot,https://github.com/OpenDroneMap/WebODM/pull/1701,smathermather,COMMENTED,"This is a lot of churn for a one line change, in addition to being what appears to be more than an assistive use. Suggest closing in favor of #1702.",2025-07-08T20:08:43Z
+3218361480,7268,Copilot,https://github.com/microsoft/vscode-pull-request-github/pull/7268,alexr00,CHANGES_REQUESTED,"@copilot, the issue isn't with the link provider. It's instead about changing the body HTML of issue and PR descriptions to look for `#123` style links and replacing them with vscode scheme links with the `/open-issue-webview` or `/open-pull-request-webview` path.",2025-07-10T08:57:00Z
+3165595596,1400,OpenAI_Codex,https://github.com/marin-community/marin/pull/1400,BabyChouSr,COMMENTED,"I don't fully understand what this is fixing? We use `max_doc_tokens` in the config and everywhere in the code, wondering where it picked it up that we aren't?",2025-07-17T04:42:11Z
+3229175854,2918,OpenAI_Codex,https://github.com/KomodoPlatform/komodo-wallet/pull/2918,smk762,APPROVED,"It builds and launches, code changes appear to be non-intrusive so :heavy_check_mark: ",2025-07-15T13:08:33Z
+3083630331,10005,OpenAI_Codex,https://github.com/Significant-Gravitas/AutoGPT/pull/10005,Pwuts,COMMENTED,This doesn't fix error cases. I have a better fix for this :),2025-05-22T15:07:43Z
+3128810853,1282,OpenAI_Codex,https://github.com/openai/codex/pull/1282,saikrishnarallabandi,COMMENTED,good,2025-06-09T00:25:40Z
+3199191078,8428,OpenAI_Codex,https://github.com/nextcloud/desktop/pull/8428,claucambra,CHANGES_REQUESTED,+1 for @mgallien comments,2025-07-03T14:03:41Z
+3199191078,8428,OpenAI_Codex,https://github.com/nextcloud/desktop/pull/8428,i2h3,CHANGES_REQUESTED,Please address @mgallien's change requests.,2025-07-16T13:26:45Z
+3246108339,3990,OpenAI_Codex,https://github.com/Stirling-Tools/Stirling-PDF/pull/3990,ConnorYoh,CHANGES_REQUESTED,"* I am getting double tool tips on light mode button
+<img width=""532"" height=""142"" alt=""{A4F46C90-D859-49FE-9456-8EB60648DF64}"" src=""https://github.com/user-attachments/assets/e31c69ac-dac9-4df2-86fe-fa4688d5aeeb"" />
+
+* Tool tip text not being translated: is this because its a new text entry?
+* First click of lightmode button doesn't seem to be recognised for some reason on a new incognito window. (not a new issue as its on .IO too.
+
+
+",2025-07-21T08:58:32Z
+3240797601,21135,OpenAI_Codex,https://github.com/vllm-project/vllm/pull/21135,hmellor,CHANGES_REQUESTED,I think it would be cleaner to flip the default and then use `argparse.BooleanOptionalAction`,2025-07-17T20:33:29Z
+3080749324,773,OpenAI_Codex,https://github.com/modelcontextprotocol/python-sdk/pull/773,ihrpr,CHANGES_REQUESTED,"Thank you for working on this fix for issue #577. While the PR addresses the cleanup order issue, there are several concerns that need to be addressed:
+
+  1. task cleanup to prevent memory leaks
+  2. document the limitations of the CompatTaskGroup clearly
+  3. Add comprehensive tests for the new compatibility layer
+  5.  do we need to have this broad change, targeted fix would be safer",2025-05-23T13:39:57Z
+3098924861,19985,OpenAI_Codex,https://github.com/oven-sh/bun/pull/19985,nektro,COMMENTED,"given the readStart comment and there being a comment in the node source that this is a private api, we might want to hold off on this just a bit longer",2025-05-29T05:19:03Z
+3098984483,19991,OpenAI_Codex,https://github.com/oven-sh/bun/pull/19991,nektro,COMMENTED,will merge conflict with another branch and needs a small enhancement but fix is generally correct,2025-05-29T07:47:54Z
+3102144371,20058,OpenAI_Codex,https://github.com/oven-sh/bun/pull/20058,190n,CHANGES_REQUESTED,add a bun test,2025-05-30T18:02:53Z
+3087680791,10383,OpenAI_Codex,https://github.com/fluent/fluent-bit/pull/10383,niedbalski,APPROVED,Please fix the PR title,2025-05-27T06:07:02Z
+3220203677,23357,OpenAI_Codex,https://github.com/vectordotdev/vector/pull/23357,pront,CHANGES_REQUESTED,"If I hide whitespace changes, this PR doesn't do anything. ",2025-07-10T18:07:17Z
+3135847691,148,OpenAI_Codex,https://github.com/AgentOps-AI/tokencost/pull/148,dot-agi,COMMENTED,"Fetching models data from OpenRouter reduces the number to roughly 1/3rd of the data we get from the LiteLLM repo's dictionary.
+
+OpenRouter contains the data for the latest models while the LiteLLM dictionary has the data for other inference providers (SambaNova, Azure, Bedrock etc.).
+
+I would prefer using LiteLLM instead of switching to OpenRouter.",2025-06-11T08:15:37Z
+3075616006,2251,OpenAI_Codex,https://github.com/hirosystems/explorer/pull/2251,BLuEScioN,CHANGES_REQUESTED,Deletes workplan and tests. The E2E test is no good.,2025-05-21T21:52:42Z
+3081523540,5134,OpenAI_Codex,https://github.com/beyond-all-reason/Beyond-All-Reason/pull/5134,robertthepie,APPROVED,"Thank you Goverment Provided Proofreader for our communial dyselxia.
+LGTM
+
+tho uncertain about the json one, since json to my knowledge doesn't support comments?",2025-05-21T22:19:14Z
+3081523540,5134,OpenAI_Codex,https://github.com/beyond-all-reason/Beyond-All-Reason/pull/5134,WatchTheFort,CHANGES_REQUESTED,"It looks like tabs were changed to spaces, please change back to tabs",2025-05-22T14:39:36Z
+3151050095,12642,OpenAI_Codex,https://github.com/twentyhq/twenty/pull/12642,charlesBochet,CHANGES_REQUESTED,"PR seems off, closing, let's re-open once ready!",2025-06-16T21:37:44Z
+3201071820,1361,OpenAI_Codex,https://github.com/giselles-ai/giselle/pull/1361,shige,APPROVED,Thank you! 🆙 ,2025-07-04T02:27:21Z
+3115694514,494,OpenAI_Codex,https://github.com/recallnet/js-recall/pull/494,joewagner,APPROVED,Nice catch!,2025-06-03T23:22:13Z
+3115694514,494,OpenAI_Codex,https://github.com/recallnet/js-recall/pull/494,dtbuchholz,APPROVED,"nice! 
+
+does that chatgpt/codex link have a ""sharable"" view? i'm just curious what it looks like (my ChatGPT account is a personal one, so i can't see that codex task info)",2025-06-03T23:22:26Z
+3220673790,2554,Cursor,https://github.com/514-labs/moose/pull/2554,phiSgr,APPROVED,will probably move `check_typescript_dependencies` to the typescript package when we add the python check,2025-07-11T12:49:49Z
+3231259535,4688,Cursor,https://github.com/dailydotdev/apps/pull/4688,sshanzel,APPROVED,"Don't have much to add. Although not sure about the MD, we've never really merged any additional MD in main before.",2025-07-18T13:20:51Z
+3189049757,3460,Cursor,https://github.com/timmo001/system-bridge/pull/3460,timmo001,COMMENTED,"Apart from the global recovery, claude-4-sonnet does way too much here",2025-07-16T14:03:07Z
+3232731143,5794,Cursor,https://github.com/rsyslog/rsyslog/pull/5794,rgerhards,CHANGES_REQUESTED,binary test_offmsg is included in commit. This cannot be merged and needs to be removed.,2025-07-15T15:37:12Z
+3047296744,21174,Devin,https://github.com/calcom/cal.com/pull/21174,TusharBhatt1,COMMENTED,"The task was to remove type errors - why are we doing so much here , plus we have a failing test",2025-05-08T05:06:12Z
+3067210808,21346,Devin,https://github.com/calcom/cal.com/pull/21346,TusharBhatt1,COMMENTED,LGTM,2025-05-18T05:49:25Z
+2904296517,4030,Devin,https://github.com/marimo-team/marimo/pull/4030,akshayka,COMMENTED,"This doesn't work, `import __future__` has to be the first statement in the Python file, after comments. It's not possible to `import __future__` in a function. The only workaround that I can think of that would work would be to save it as an unparsable cell.
+
+I think we don't should commit to supporting this unless people really want it.",2025-03-08T18:00:44Z
+2770730384,1164,Devin,https://github.com/ComposioHQ/composio/pull/1164,Prat011,COMMENTED,"readmes added, looks good",2025-01-09T13:55:20Z
+3060575393,1596,Devin,https://github.com/freenet/freenet-core/pull/1596,iduartgomez,COMMENTED,"I think this is a good change, it was aggresive dropping a connection if it was failing to broadcast in time, although in theory it should! We need to look after why we need retries or such long time outs but we can do that in a different PR and it may be related to transport issues.",2025-05-13T17:35:29Z
+3019360629,376,Devin,https://github.com/digitaldemocracy2030/kouchou-ai/pull/376,nasuka,CHANGES_REQUESTED,extractionが反映されないので、フィールド名とは別の問題がある,2025-04-25T08:30:18Z
+3221627962,1493,Devin,https://github.com/reflex-dev/reflex-web/pull/1493,Alek99,CHANGES_REQUESTED,This should not be hardcoded why are we hardcodeding so many values,2025-07-11T20:21:56Z
+3221627962,1493,Devin,https://github.com/reflex-dev/reflex-web/pull/1493,Alek99,CHANGES_REQUESTED,"
+main
+ branch of 
+reflex-web
+ does not contain the path 
+docs/docs/getting_started/introduction.md.
+
+
+the first page edit page link I tried didn't work ",2025-07-14T22:47:35Z
+3180830949,62108,Devin,https://github.com/airbytehq/airbyte/pull/62108,mwbayley,CHANGES_REQUESTED,"Failed testing. I just filed a PR against this branch which makes a change to Postgres and does not bump the version. This should fail, but CI succeeded: https://github.com/airbytehq/airbyte/pull/62125
+
+update: The check was skipped because the PR was marked as a draft. When I marked it ready for review, it failed as expected. We currently have another issue where the check does not complete when run from the enterprise repo: ```FileNotFoundError: [Errno 2] No such file or directory: 'gh'```",2025-06-27T20:46:35Z
+3180830949,62108,Devin,https://github.com/airbytehq/airbyte/pull/62108,mwbayley,CHANGES_REQUESTED,"Devin, this is incorrect. FileNotFoundError in this case cannot be handled or ignored. We need to pull the repo successfully or fail the check.",2025-06-27T22:13:44Z
+3013552792,1458,Devin,https://github.com/liam-hq/liam/pull/1458,junkisai,COMMENTED,I have left a comment!,2025-04-23T12:32:27Z
+2971334427,20541,Devin,https://github.com/calcom/cal.com/pull/20541,TusharBhatt1,COMMENTED,This PR has no issue related issue nor the details are clear - plus conflicts,2025-04-04T13:34:22Z
+3063938472,918,Devin,https://github.com/formancehq/ledger/pull/918,gfyrag,CHANGES_REQUESTED,"not tested.
+and probably wrong",2025-05-14T19:24:52Z
+3063938472,918,Devin,https://github.com/formancehq/ledger/pull/918,gfyrag,COMMENTED,Add integration tests noob!,2025-05-14T19:37:52Z
